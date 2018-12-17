@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelesaiPesananActivity">
+
+    <TextView
+        android:id="@+id/staticPesananId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/text_pesananId"
+        app:layout_constraintBottom_toTopOf="@+id/StaticBiaya"
+        app:layout_constraintEnd_toStartOf="@+id/pesananId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pesananId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/biaya"
+        app:layout_constraintStart_toEndOf="@+id/staticPesananId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/StaticBiaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginStart="58dp"
+        android:text="@string/text_biaya"
+        app:layout_constraintBottom_toTopOf="@+id/staticJumlahHari"
+        app:layout_constraintEnd_toStartOf="@+id/biaya"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staticPesananId" />
+
+    <TextView
+        android:id="@+id/biaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/jumlahhari"
+        app:layout_constraintStart_toEndOf="@+id/StaticBiaya"
+        app:layout_constraintTop_toBottomOf="@+id/pesananId" />
+
+    <TextView
+        android:id="@+id/staticJumlahHari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginStart="58dp"
+        android:text="@string/text_jumlahHari"
+        app:layout_constraintBottom_toTopOf="@+id/staticTanggalPesan"
+        app:layout_constraintEnd_toStartOf="@+id/jumlahhari"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StaticBiaya" />
+
+    <TextView
+        android:id="@+id/jumlahhari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/tanggalPesan"
+        app:layout_constraintStart_toEndOf="@+id/staticJumlahHari"
+        app:layout_constraintTop_toBottomOf="@+id/biaya" />
+
+    <TextView
+        android:id="@+id/staticTanggalPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="248dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginStart="58dp"
+        android:text="@string/text_tanggalpesan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tanggalPesan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staticJumlahHari" />
+
+    <TextView
+        android:id="@+id/tanggalPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="248dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/staticTanggalPesan"
+        app:layout_constraintTop_toBottomOf="@+id/jumlahhari" />
+
+    <Button
+        android:id="@+id/selesaiBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginStart="116dp"
+        android:text="@string/text_Selesaikan"
+        app:layout_constraintBottom_toTopOf="@+id/cancelBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="67dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginStart="116dp"
+        android:text="@string/text_batalkan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Jhotel.iml" filepath="$PROJECT_DIR$/.idea/Jhotel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jhotel_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Jhotel_main.iml" group="Jhotel" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jhotel_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Jhotel_test.iml" group="Jhotel" />
+    </modules>
+  </component>
+</project>
